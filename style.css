@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: linear-gradient(135deg, #1a1a1a, #0a0a0a);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 480px;
+  padding: 32px;
+  background: rgba(30, 30, 30, 0.95);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+h1, h2 {
+  margin-bottom: 24px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 20px;
+  color: #e0e0e0;
+}
+
+#product-list {
+  margin-bottom: 36px;
+}
+
+.product {
+  background: rgba(51, 51, 51, 0.8);
+  padding: 16px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product button {
+  background: linear-gradient(135deg, #6200ea, #7c4dff);
+  border: none;
+  padding: 8px 16px;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.product button:hover {
+  background: linear-gradient(135deg, #7c4dff, #6200ea);
+  box-shadow: 0 4px 12px rgba(98, 0, 234, 0.3);
+}
+
+.product button:active {
+  transform: scale(0.98);
+}
+
+#cart-items {
+  margin-bottom: 24px;
+  padding: 16px;
+  background: rgba(40, 40, 40, 0.6);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+#cart-total {
+  text-align: right;
+  font-size: 18px;
+  font-weight: 600;
+  color: #e0e0e0;
+  margin-bottom: 20px;
+  padding: 16px;
+  background: rgba(40, 40, 40, 0.4);
+  border-radius: 12px;
+}
+
+#checkout-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #6200ea, #7c4dff);
+  border: none;
+  padding: 16px;
+  color: white;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#checkout-btn:hover {
+  background: linear-gradient(135deg, #7c4dff, #6200ea);
+  box-shadow: 0 4px 12px rgba(98, 0, 234, 0.3);
+}
+
+#checkout-btn:active {
+  transform: scale(0.98);
+}
+
+.hidden {
+  display: none;
+}
+
+/* Add smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add loading animation for products */
+.product {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Add responsive design */
+@media (max-width: 500px) {
+  .container {
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+  
+  .product {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+  
+  .product button {
+    width: 100%;
+  }
+}
