@@ -94,8 +94,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 ---
 
-### README.md
-
 Here's a template for the `README.md` file that explains the setup, usage, and structure of this shopping cart application.
 
 ```markdown
@@ -147,10 +145,7 @@ This is a basic shopping cart application built with HTML, CSS, and JavaScript. 
 - **CSS**: Adds styling for a clean user interface.
 - **JavaScript**: Manages cart functionality and interactivity.
 
----
 
-### Screenshots
-*Include screenshots here if applicable.*
 
 ## License
 
