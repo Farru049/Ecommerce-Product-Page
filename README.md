@@ -94,8 +94,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 ---
 
-Here's a template for the `README.md` file that explains the setup, usage, and structure of this shopping cart application.
-
 ```markdown
 # Simple JavaScript Shopping Cart
 
